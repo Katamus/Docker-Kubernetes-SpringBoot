@@ -54,7 +54,7 @@ public class CursoServiceImpl implements CursoService{
 
             Curso curso = o.get();
             CursoUsuario cursoUsuario = new CursoUsuario();
-            cursoUsuario.setUsuarioId(usuario.getId());
+            cursoUsuario.setUsuarioId(usuarioMsvc.getId());
 
             curso.addCursoUsuario(cursoUsuario);
             repository.save(curso);
@@ -73,7 +73,7 @@ public class CursoServiceImpl implements CursoService{
 
             Curso curso = o.get();
             CursoUsuario cursoUsuario = new CursoUsuario();
-            cursoUsuario.setUsuarioId(usuario.getId());
+            cursoUsuario.setUsuarioId(usuarioMsvc.getId());
 
             curso.addCursoUsuario(cursoUsuario);
             repository.save(curso);
@@ -91,7 +91,7 @@ public class CursoServiceImpl implements CursoService{
 
             Curso curso = o.get();
             CursoUsuario cursoUsuario = new CursoUsuario();
-            cursoUsuario.setUsuarioId(usuario.getId());
+            cursoUsuario.setUsuarioId(usuarioMsvc.getId());
 
             curso.removeCursoUsuario(cursoUsuario);
             repository.save(curso);

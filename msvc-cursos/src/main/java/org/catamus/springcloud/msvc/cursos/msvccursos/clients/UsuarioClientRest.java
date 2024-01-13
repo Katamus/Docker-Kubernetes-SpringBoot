@@ -13,7 +13,7 @@ public interface UsuarioClientRest {
     @GetMapping("/{id}")
     Usuario detalle(@PathVariable Long id);
 
-    @PostMapping("{/}")
+    @PostMapping
     Usuario crear(@RequestBody Usuario usuario);
 
 }
