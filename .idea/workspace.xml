@@ -57,6 +57,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.catamus.springcloud.msvc.cursos.msvccursos.models" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.MsvcUsuariosApplication">
     <configuration name="MsvcCursosApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.catamus.springcloud.msvc.cursos.msvccursos.MsvcCursosApplication" />
