@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2ffef4d8-278b-4220-8e65-0216709c05bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-cursos/src/main/java/org/catamus/springcloud/msvc/cursos/msvccursos/models/entity/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-cursos/src/main/java/org/catamus/springcloud/msvc/cursos/msvccursos/models/entity/Curso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc-cursos/src/main/java/org/catamus/springcloud/msvc/cursos/msvccursos/services/CursoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-cursos/src/main/java/org/catamus/springcloud/msvc/cursos/msvccursos/services/CursoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc-cursos/src/main/java/org/catamus/springcloud/msvc/cursos/msvccursos/services/CursoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-cursos/src/main/java/org/catamus/springcloud/msvc/cursos/msvccursos/services/CursoServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <recent name="org.catamus.springcloud.msvc.cursos.msvccursos.models" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MsvcUsuariosApplication">
+  <component name="RunManager" selected="Application.MsvcCursosApplication">
     <configuration name="MsvcCursosApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.catamus.springcloud.msvc.cursos.msvccursos.MsvcCursosApplication" />
       <module name="msvc-cursos" />
@@ -91,8 +92,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MsvcUsuariosApplication" />
         <item itemvalue="Application.MsvcCursosApplication" />
+        <item itemvalue="Application.MsvcUsuariosApplication" />
       </list>
     </recent_temporary>
   </component>

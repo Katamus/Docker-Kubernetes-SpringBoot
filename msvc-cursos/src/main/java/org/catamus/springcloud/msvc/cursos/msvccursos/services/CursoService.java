@@ -1,5 +1,6 @@
 package org.catamus.springcloud.msvc.cursos.msvccursos.services;
 
+import org.catamus.springcloud.msvc.cursos.msvccursos.models.Usuario;
 import org.catamus.springcloud.msvc.cursos.msvccursos.models.entity.Curso;
 
 import java.util.List;
@@ -14,5 +15,11 @@ public interface CursoService {
     Curso guardar(Curso curso);
 
     void eliminar(Long id);
+
+    Optional<Usuario> asignarUsuario(Usuario usuario, Long cursoId);
+
+    Optional<Usuario> crearUsuario(Usuario usuario, Long cursoId);
+
+    Optional<Usuario> eliminarUsuario(Usuario usuario, Long cursoId);
 
 }
