@@ -1,5 +1,6 @@
 package org.catamus.springcloud.msvc.cursos.msvccursos.services;
 
+import org.catamus.springcloud.msvc.cursos.msvccursos.clients.UsuarioClientRest;
 import org.catamus.springcloud.msvc.cursos.msvccursos.models.Usuario;
 import org.catamus.springcloud.msvc.cursos.msvccursos.models.entity.Curso;
 import org.catamus.springcloud.msvc.cursos.msvccursos.repositories.CursoRepository;
@@ -14,6 +15,9 @@ import java.util.Optional;
 public class CursoServiceImpl implements CursoService{
     @Autowired
     private CursoRepository repository;
+
+    @Autowired
+    private UsuarioClientRest client;
 
     @Override
     @Transactional(readOnly = true)
