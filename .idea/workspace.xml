@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2ffef4d8-278b-4220-8e65-0216709c05bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-cursos/src/main/java/org/catamus/springcloud/msvc/cursos/msvccursos/MsvcCursosApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-cursos/src/main/java/org/catamus/springcloud/msvc/cursos/msvccursos/MsvcCursosApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msvc-cursos/src/main/java/org/catamus/springcloud/msvc/cursos/msvccursos/services/CursoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-cursos/src/main/java/org/catamus/springcloud/msvc/cursos/msvccursos/services/CursoServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
