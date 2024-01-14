@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
@@ -47,5 +48,10 @@ public class UsuarioServiceImpl implements UsuarioService{
     @Override
     public boolean existePorEmail(String email) {
         return repository.existsByEmail(email);
+    }
+
+    @Override
+    public List<Usuario> listarPorIds(Iterable<Long> ids) {
+        return (List<Usuario>) repository.findAllById(ids);
     }
 }

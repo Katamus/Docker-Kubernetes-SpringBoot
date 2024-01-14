@@ -2,6 +2,7 @@ package org.catamus.springcloud.msvc.usuarios.services;
 
 import org.catamus.springcloud.msvc.usuarios.models.entity.Usuario;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
@@ -14,4 +15,5 @@ public interface UsuarioService {
     Optional<Usuario> porEmail(String email);
 
     boolean existePorEmail(String email);
+    List<Usuario> listarPorIds(Iterable<Long> ids);
 }
