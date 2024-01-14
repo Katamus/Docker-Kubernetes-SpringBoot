@@ -1,6 +1,7 @@
 package org.catamus.springcloud.msvc.usuarios.services;
 
 
+import org.catamus.springcloud.msvc.usuarios.clients.CursoClienteRest;
 import org.catamus.springcloud.msvc.usuarios.models.entity.Usuario;
 import org.catamus.springcloud.msvc.usuarios.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,9 @@ public class UsuarioServiceImpl implements UsuarioService{
 
     @Autowired
     UsuarioRepository repository;
+
+    @Autowired
+    CursoClienteRest client;
     @Override
     @Transactional(readOnly = true)
     public List<Usuario> listar() {
@@ -37,6 +41,7 @@ public class UsuarioServiceImpl implements UsuarioService{
     @Override
     @Transactional
     public void eliminar(Long id) {
+        client.eliminarCursoUsuarioPorId(id);
         repository.deleteById(id);
     }
 

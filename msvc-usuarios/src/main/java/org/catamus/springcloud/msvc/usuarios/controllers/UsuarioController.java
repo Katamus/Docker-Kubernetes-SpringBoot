@@ -80,6 +80,7 @@ public class UsuarioController {
         Optional<Usuario> o = service.porId(id);
         if(o.isPresent()){
             service.eliminar(id);
+
             return ResponseEntity.noContent().build();
         }
         return ResponseEntity.notFound().build();
