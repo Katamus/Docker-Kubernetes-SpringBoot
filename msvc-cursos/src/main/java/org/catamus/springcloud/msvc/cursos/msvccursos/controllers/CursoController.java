@@ -121,4 +121,10 @@ public class CursoController {
         });
         return ResponseEntity.badRequest().body(errores);
     }
+
+    @DeleteMapping("eliminar-usuario/{id}")
+    public ResponseEntity<?> eliminarCursoUsuarioPorId(@PathVariable Long id){
+        return ResponseEntity.noContent().build();
+    }
+
 }
