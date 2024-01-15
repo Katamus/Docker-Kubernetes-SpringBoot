@@ -66,7 +66,7 @@ public class CursoServiceImpl implements CursoService{
     }
 
     @Override
-    @Transactional(readOnly = true)
+    @Transactional
     public Optional<Usuario> asignarUsuario(Usuario usuario, Long cursoId) {
 
         Optional<Curso> o = repository.findById(cursoId);
@@ -86,7 +86,7 @@ public class CursoServiceImpl implements CursoService{
     }
 
     @Override
-    @Transactional(readOnly = true)
+    @Transactional
     public Optional<Usuario> crearUsuario(Usuario usuario, Long cursoId) {
         Optional<Curso> o = repository.findById(cursoId);
         if(o.isPresent()){
@@ -104,7 +104,7 @@ public class CursoServiceImpl implements CursoService{
     }
 
     @Override
-    @Transactional(readOnly = true)
+    @Transactional
     public Optional<Usuario> eliminarUsuario(Usuario usuario, Long cursoId) {
         Optional<Curso> o = repository.findById(cursoId);
         if(o.isPresent()){
