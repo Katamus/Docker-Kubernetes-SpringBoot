@@ -1,6 +1,7 @@
 version: "3.9"
 services:
   docker-mariadb-db:
+    container_name: docker-mariadb-db
     image: mariadb:jammy
     ports:
       - "3306:3306"
@@ -10,12 +11,13 @@ services:
       MARIADB_ROOT_PASSWORD: root-secret-development
       MARIADB_DATABASE: msvc_usuarios
     volumes:
-      - volume data-mysql:/var/lib/mysql
+      - data-mysql:/var/lib/mysql
     restart: always
     networks:
       - spring
 
   docker-postgres-db:
+    container_name: docker-postgres-db
     image: postgres:16
     ports:
       - "5432:5432"
@@ -30,6 +32,7 @@ services:
       - spring
 
   msvc-usuarios:
+    container_name: msvc-usuarios
     image: usuarios
     ports:
       - "8001:8001"
@@ -41,6 +44,7 @@ services:
     restart: always
 
   msvc-cursos:
+    container_name: msvc-cursos
     image: cursos
     ports:
       - "8002:8002"
@@ -54,9 +58,13 @@ services:
 
 volumes:
   data-mysql:
+    name: data-mysql
   data-postgres:
+    name: data-postgres
 
 networks:
   spring:
+    name: spring
+    external: true
 
 
