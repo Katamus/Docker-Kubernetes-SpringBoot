@@ -30,10 +30,27 @@ services:
       - spring
 
   msvc-usuarios:
-
-
+    image: usuarios
+    ports:
+      - "8001:8001"
+    env_file: ./msvc-usuarios/.env
+    networks:
+      - spring
+    depends_on:
+      - docker-mariadb-db
+    restart: always
 
   msvc-cursos:
+    image: cursos
+    ports:
+      - "8002:8002"
+    env_file:
+      - ./msvc-cursos/.env
+    networks:
+      - spring
+    depends_on:
+      - docker-postgres-db
+    restart: always
 
 volumes:
   data-mysql:
