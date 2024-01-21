@@ -1,0 +1,49 @@
+version: "3.9"
+services:
+  docker-postgres-db:
+    container_name: docker-postgres-db
+    image: postgres:16
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=msvc_cursos
+    volumes:
+      - data-postgres:/var/lib/postgresql/data
+    restart: always
+    networks:
+      - spring
+
+  msvc-cursos:
+    container_name: msvc-cursos
+    image: katamus/cursos
+#    build:
+#      context: ./
+#      dockerfile: ./msvc-cursos/Dockerfile
+    ports:
+      - "8002:8002"
+    environment:
+      PORT: 8002
+      DB_HOST: docker-postgres-db:5432
+      DB_DATABASE: msvc_cursos
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+      USUARIOS_URL: ec2-54-175-210-197.compute-1.amazonaws.com:8001
+    networks:
+      - spring
+    depends_on:
+      - docker-postgres-db
+      - msvc-usuarios
+    restart: always
+
+volumes:
+  data-postgres:
+    name: data-postgres
+
+networks:
+  spring:
+    name: spring
+    external: true
+
+
