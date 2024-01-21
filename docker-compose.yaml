@@ -33,12 +33,19 @@ services:
 
   msvc-usuarios:
     container_name: msvc-usuarios
-    build:
-      context: ./
-      dockerfile: ./msvc-usuarios/Dockerfile
+    image: katamus/usuarios
+#    build:
+#      context: ./
+#      dockerfile: ./msvc-usuarios/Dockerfile
     ports:
       - "8001:8001"
-    env_file: ./msvc-usuarios/.env
+    environment:
+      PORT: 8001
+      DB_HOST: docker-mariadb-db:3306
+      DB_DATABASE: msvc_usuarios
+      DB_USERNAME: mariadb
+      DB_PASSWORD: mariadb
+      CURSOS_URL: msvc-cursos:8002
     networks:
       - spring
     depends_on:
@@ -47,13 +54,19 @@ services:
 
   msvc-cursos:
     container_name: msvc-cursos
-    build:
-      context: ./
-      dockerfile: ./msvc-cursos/Dockerfile
+    image: katamus/cursos
+#    build:
+#      context: ./
+#      dockerfile: ./msvc-cursos/Dockerfile
     ports:
       - "8002:8002"
-    env_file:
-      - ./msvc-cursos/.env
+    environment:
+      PORT: 8002
+      DB_HOST: docker-postgres-db:5432
+      DB_DATABASE: msvc_cursos
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+      USUARIOS_URL: msvc-usuarios:8001
     networks:
       - spring
     depends_on:
