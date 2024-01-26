@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docker-postgres-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: docker-postgres-db
+  template:
+    metadata:
+      app: docker-postgres-db
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:16
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_PASSWORD
+              value: postgres
+            - name: POSTGRES_USER
+              value: postgres
+            - name: POSTGRES_DB
+              value: msvc_cursos
