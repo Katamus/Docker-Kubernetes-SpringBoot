@@ -9,7 +9,8 @@ spec:
       app: docker-postgres-db
   template:
     metadata:
-      app: docker-postgres-db
+      labels:
+        app: docker-postgres-db
     spec:
       containers:
         - name: postgres
