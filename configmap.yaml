@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: msvc-usuarios
+data:
+  port: "8001"
+  db_host: docker-mariadb-db:3306
+  database: msvc_usuarios
+  username: mariadb
+  password: mariadb
+  curso_url: msvc-cursos:8002
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: msvc-cursos
+data:
+  port: "8002"
+  db_host: docker-postgres-db:5432
+  database: msvc_cursos
+  username: postgres
+  password: postgres
+  usuario_url: "msvc-usuarios:8001"
