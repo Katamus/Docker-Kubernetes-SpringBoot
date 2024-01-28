@@ -8,7 +8,7 @@ data:
   database: msvc_usuarios
   username: mariadb
   password: mariadb
-  superPassword: root-secret-development
+  super_password: root-secret-development
   curso_url: msvc-cursos:8002
 ---
 apiVersion: v1
