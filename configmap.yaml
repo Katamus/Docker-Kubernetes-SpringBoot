@@ -10,6 +10,9 @@ data:
 #  password: mariadb
   super_password: root-secret-development
   curso_url: msvc-cursos:8002
+  msvc-usuarios.yaml:  |-
+    config:
+      texto: Configurando ambiente por defecto
 ---
 apiVersion: v1
 kind: ConfigMap
