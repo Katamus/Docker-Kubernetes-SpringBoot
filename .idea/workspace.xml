@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2ffef4d8-278b-4220-8e65-0216709c05bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment-usuarios.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment-usuarios.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-pv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-pv.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-pvc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-pvc.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres-pv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/postgres-pv.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgres-pvc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/postgres-pvc.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
