@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2ffef4d8-278b-4220-8e65-0216709c05bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-auth/src/main/java/org/catamus/springcloud/msvc/auth/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-auth/src/main/java/org/catamus/springcloud/msvc/auth/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
     "git-widget-placeholder": "SEC20.2",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Criscahu/Documents/Proyecto/curso-kubernetes/msvc-auth",
+    "last_opened_file_path": "C:/Users/Criscahu/Documents/Proyecto/curso-kubernetes",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -60,9 +59,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Criscahu\Documents\Proyecto\curso-kubernetes" />
       <recent name="C:\Users\Criscahu\Documents\Proyecto\curso-kubernetes\msvc-auth" />
       <recent name="C:\Users\Criscahu\Documents\Proyecto\curso-kubernetes\msvc-gateway" />
-      <recent name="C:\Users\Criscahu\Documents\Proyecto\curso-kubernetes" />
       <recent name="C:\Users\Criscahu\Documents\Proyecto\curso-kubernetes\msvc-cursos" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
