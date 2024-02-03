@@ -1,4 +1,4 @@
-package org.catamus.springcloud.msvc.cursos.msvccursos;
+package org.catamus.springcloud.msvc.cursos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

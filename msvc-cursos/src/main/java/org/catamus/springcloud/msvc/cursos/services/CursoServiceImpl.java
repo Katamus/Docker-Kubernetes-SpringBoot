@@ -1,10 +1,10 @@
-package org.catamus.springcloud.msvc.cursos.msvccursos.services;
+package org.catamus.springcloud.msvc.cursos.services;
 
-import org.catamus.springcloud.msvc.cursos.msvccursos.clients.UsuarioClientRest;
-import org.catamus.springcloud.msvc.cursos.msvccursos.models.Usuario;
-import org.catamus.springcloud.msvc.cursos.msvccursos.models.entity.Curso;
-import org.catamus.springcloud.msvc.cursos.msvccursos.models.entity.CursoUsuario;
-import org.catamus.springcloud.msvc.cursos.msvccursos.repositories.CursoRepository;
+import org.catamus.springcloud.msvc.cursos.clients.UsuarioClientRest;
+import org.catamus.springcloud.msvc.cursos.models.Usuario;
+import org.catamus.springcloud.msvc.cursos.models.entity.Curso;
+import org.catamus.springcloud.msvc.cursos.models.entity.CursoUsuario;
+import org.catamus.springcloud.msvc.cursos.repositories.CursoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

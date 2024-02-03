@@ -1,10 +1,10 @@
-package org.catamus.springcloud.msvc.cursos.msvccursos.controllers;
+package org.catamus.springcloud.msvc.cursos.controllers;
 
 import feign.FeignException;
 import jakarta.validation.Valid;
-import org.catamus.springcloud.msvc.cursos.msvccursos.models.Usuario;
-import org.catamus.springcloud.msvc.cursos.msvccursos.models.entity.Curso;
-import org.catamus.springcloud.msvc.cursos.msvccursos.services.CursoService;
+import org.catamus.springcloud.msvc.cursos.models.Usuario;
+import org.catamus.springcloud.msvc.cursos.models.entity.Curso;
+import org.catamus.springcloud.msvc.cursos.services.CursoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,10 +1,9 @@
-package org.catamus.springcloud.msvc.cursos.msvccursos.clients;
+package org.catamus.springcloud.msvc.cursos.clients;
 
-import org.catamus.springcloud.msvc.cursos.msvccursos.models.Usuario;
+import org.catamus.springcloud.msvc.cursos.models.Usuario;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Iterator;
 import java.util.List;
 
 @FeignClient(name="msvc-usuarios")

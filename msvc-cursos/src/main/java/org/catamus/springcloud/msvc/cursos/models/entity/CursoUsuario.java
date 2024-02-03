@@ -1,4 +1,4 @@
-package org.catamus.springcloud.msvc.cursos.msvccursos.models.entity;
+package org.catamus.springcloud.msvc.cursos.models.entity;
 
 import jakarta.persistence.*;
 

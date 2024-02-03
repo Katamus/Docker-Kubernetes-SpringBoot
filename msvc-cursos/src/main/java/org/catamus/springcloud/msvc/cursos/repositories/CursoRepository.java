@@ -1,6 +1,6 @@
-package org.catamus.springcloud.msvc.cursos.msvccursos.repositories;
+package org.catamus.springcloud.msvc.cursos.repositories;
 
-import org.catamus.springcloud.msvc.cursos.msvccursos.models.entity.Curso;
+import org.catamus.springcloud.msvc.cursos.models.entity.Curso;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

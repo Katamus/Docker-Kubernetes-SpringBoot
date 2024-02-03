@@ -1,8 +1,8 @@
-package org.catamus.springcloud.msvc.cursos.msvccursos.models.entity;
+package org.catamus.springcloud.msvc.cursos.models.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
-import org.catamus.springcloud.msvc.cursos.msvccursos.models.Usuario;
+import org.catamus.springcloud.msvc.cursos.models.Usuario;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.catamus.springcloud.msvc.cursos.msvccursos.models;
+package org.catamus.springcloud.msvc.cursos.models;
 
 public class Usuario {
 

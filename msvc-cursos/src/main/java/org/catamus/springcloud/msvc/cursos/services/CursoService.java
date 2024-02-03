@@ -1,7 +1,7 @@
-package org.catamus.springcloud.msvc.cursos.msvccursos.services;
+package org.catamus.springcloud.msvc.cursos.services;
 
-import org.catamus.springcloud.msvc.cursos.msvccursos.models.Usuario;
-import org.catamus.springcloud.msvc.cursos.msvccursos.models.entity.Curso;
+import org.catamus.springcloud.msvc.cursos.models.Usuario;
+import org.catamus.springcloud.msvc.cursos.models.entity.Curso;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package org.catamus.springcloud.msvc.cursos.msvccursos;
+package org.catamus.springcloud.msvc.cursos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
