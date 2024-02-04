@@ -129,5 +129,15 @@ public class UsuarioController {
         return Collections.singletonMap("code",code);
     }
 
+    @GetMapping("/login")
+    public ResponseEntity<?> loginByEmail(@RequestParam(name="email") String email){
+
+        Optional<Usuario> o = service.porEmail(email);
+        if(o.isPresent()){
+            return ResponseEntity.ok(o.get());
+        }
+        return ResponseEntity.notFound().build();
+    }
+
 
 }
