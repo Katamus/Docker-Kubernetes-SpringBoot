@@ -25,7 +25,7 @@ public class UsuarioService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         try {
-            Usuario usuario = client.get().uri("http://msvc-usuarios:8001", uri -> uri.queryParam("email", email).build())
+            Usuario usuario = client.get().uri("http://msvc-usuarios:8001/login", uri -> uri.queryParam("email", email).build())
                     .accept(MediaType.APPLICATION_JSON)
                     .retrieve()
                     .bodyToMono(Usuario.class)
