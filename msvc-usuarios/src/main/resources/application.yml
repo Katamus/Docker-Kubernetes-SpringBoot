@@ -17,3 +17,7 @@ spring:
         provider:
           spring:
             issuer-uri: ${LB_AUTH_ISSUER_URI:http://127.0.0.1:9000}
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.security.oaut2: DEBUG

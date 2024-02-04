@@ -21,19 +21,18 @@ public class SecurityConfig {
 
         http.authorizeRequests(authz->
                 authz
-                .requestMatchers(antMatcher("/authorized")).permitAll()
-                .requestMatchers(antMatcher(HttpMethod.GET,"/")).hasAnyAuthority("SCOPE_read","SCOPE_write")
-                .requestMatchers(antMatcher(HttpMethod.GET,"/{id}")).hasAnyAuthority("SCOPE_read","SCOPE_write")
-                .requestMatchers(antMatcher(HttpMethod.POST,"/")).hasAuthority("SCOPE_write")
-                .requestMatchers(antMatcher(HttpMethod.PUT,"/{id}")).hasAuthority("SCOPE_write")
-                .requestMatchers(antMatcher(HttpMethod.DELETE,"/{id}")).hasAuthority("SCOPE_write")
+                .requestMatchers("/authorized","/login").permitAll()
+                .requestMatchers(HttpMethod.GET,"/", "/{id}").hasAnyAuthority("SCOPE_read","SCOPE_write")
+                .requestMatchers(HttpMethod.POST,"/").hasAuthority("SCOPE_write")
+                .requestMatchers(HttpMethod.PUT,"/{id}").hasAuthority("SCOPE_write")
+                .requestMatchers(HttpMethod.DELETE,"/{id}").hasAuthority("SCOPE_write")
                 .anyRequest().authenticated()
         )
         .sessionManagement(session-> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
         .oauth2Login(
                 oauth2Login -> oauth2Login.loginPage("/oauth2/authorization/msvc-usuarios-client")
         )
-        .oauth2Client(withDefaults())
+        .oauth2Client(withDefaults()).csrf(httpSecurityCsrfConfigurer -> httpSecurityCsrfConfigurer.disable())
         .oauth2ResourceServer((oauth2) -> oauth2.jwt(Customizer.withDefaults()));
 
         return http.build();

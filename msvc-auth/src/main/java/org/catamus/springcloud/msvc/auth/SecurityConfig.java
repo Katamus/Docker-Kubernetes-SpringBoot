@@ -60,7 +60,7 @@ public class SecurityConfig{
                 .exceptionHandling((exceptions) -> exceptions
                         .defaultAuthenticationEntryPointFor(
                                 new LoginUrlAuthenticationEntryPoint("/login"),
-                                new MediaTypeRequestMatcher(MediaType.TEXT_HTML)
+                                new MediaTypeRequestMatcher(MediaType.ALL)
                         )
                 )
                 // Accept access tokens for User Info and/or Client Registration
@@ -104,13 +104,14 @@ public class SecurityConfig{
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
                 .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
+                .authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
                 .redirectUri(env.getProperty("LB_USUARIOS_URI")+"/login/oauth2/code/msvc-usuarios-client")
-                .postLogoutRedirectUri(env.getProperty("LB_USUARIOS_URI")+"/authorized")
+                .redirectUri(env.getProperty("LB_USUARIOS_URI")+"/authorized")
                 .scope(OidcScopes.OPENID)
-                .scope(OidcScopes.PROFILE)
+                //.scope(OidcScopes.PROFILE)
                 .scope("read")
                 .scope("write")
-                .clientSettings(ClientSettings.builder().requireAuthorizationConsent(true).build())
+                .clientSettings(ClientSettings.builder().requireAuthorizationConsent(false).build())
                 .build();
 
         return new InMemoryRegisteredClientRepository(oidcClient);
