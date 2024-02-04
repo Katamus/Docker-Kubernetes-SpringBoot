@@ -12,7 +12,7 @@ public interface CursoService {
 
     Optional<Curso> porId(Long id);
 
-    Optional<Curso> porIdConUsuarios(Long id);
+    Optional<Curso> porIdConUsuarios(Long id,String token);
 
     Curso guardar(Curso curso);
 
