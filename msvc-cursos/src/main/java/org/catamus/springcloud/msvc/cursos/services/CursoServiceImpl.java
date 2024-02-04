@@ -67,11 +67,11 @@ public class CursoServiceImpl implements CursoService{
 
     @Override
     @Transactional
-    public Optional<Usuario> asignarUsuario(Usuario usuario, Long cursoId) {
+    public Optional<Usuario> asignarUsuario(Usuario usuario, Long cursoId,String token) {
 
         Optional<Curso> o = repository.findById(cursoId);
         if(o.isPresent()){
-            Usuario usuarioMsvc = client.detalle(usuario.getId());
+            Usuario usuarioMsvc = client.detalle(usuario.getId(),token);
 
             Curso curso = o.get();
             CursoUsuario cursoUsuario = new CursoUsuario();
@@ -87,10 +87,10 @@ public class CursoServiceImpl implements CursoService{
 
     @Override
     @Transactional
-    public Optional<Usuario> crearUsuario(Usuario usuario, Long cursoId) {
+    public Optional<Usuario> crearUsuario(Usuario usuario, Long cursoId,String token) {
         Optional<Curso> o = repository.findById(cursoId);
         if(o.isPresent()){
-            Usuario usuarioMsvc = client.crear(usuario);
+            Usuario usuarioMsvc = client.crear(usuario,token);
 
             Curso curso = o.get();
             CursoUsuario cursoUsuario = new CursoUsuario();
@@ -105,10 +105,10 @@ public class CursoServiceImpl implements CursoService{
 
     @Override
     @Transactional
-    public Optional<Usuario> eliminarUsuario(Usuario usuario, Long cursoId) {
+    public Optional<Usuario> eliminarUsuario(Usuario usuario, Long cursoId,String token) {
         Optional<Curso> o = repository.findById(cursoId);
         if(o.isPresent()){
-            Usuario usuarioMsvc = client.detalle(usuario.getId());
+            Usuario usuarioMsvc = client.detalle(usuario.getId(),token);
 
             Curso curso = o.get();
             CursoUsuario cursoUsuario = new CursoUsuario();

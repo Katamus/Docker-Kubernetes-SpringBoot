@@ -20,11 +20,11 @@ public interface CursoService {
 
     void eliminarCursoUsuarioPorId(Long id);
 
-    Optional<Usuario> asignarUsuario(Usuario usuario, Long cursoId);
+    Optional<Usuario> asignarUsuario(Usuario usuario, Long cursoId, String token);
 
-    Optional<Usuario> crearUsuario(Usuario usuario, Long cursoId);
+    Optional<Usuario> crearUsuario(Usuario usuario, Long cursoId, String token);
 
-    Optional<Usuario> eliminarUsuario(Usuario usuario, Long cursoId);
+    Optional<Usuario> eliminarUsuario(Usuario usuario, Long cursoId, String token);
 
 
 
