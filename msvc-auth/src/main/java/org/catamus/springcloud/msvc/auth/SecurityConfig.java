@@ -91,7 +91,8 @@ public class SecurityConfig{
                 )
                 // Form login handles the redirect to the login page from the
                 // authorization server filter chain
-                .formLogin(Customizer.withDefaults());
+                .formLogin(Customizer.withDefaults())
+                .csrf(httpSecurityCsrfConfigurer-> httpSecurityCsrfConfigurer.disable());
 
         return http.build();
     }
