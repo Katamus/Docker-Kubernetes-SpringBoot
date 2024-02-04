@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2ffef4d8-278b-4220-8e65-0216709c05bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configmap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configmap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-auth/src/main/java/org/catamus/springcloud/msvc/auth/MsvcAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-auth/src/main/java/org/catamus/springcloud/msvc/auth/MsvcAuthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-auth/src/main/java/org/catamus/springcloud/msvc/auth/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-auth/src/main/java/org/catamus/springcloud/msvc/auth/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-auth/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msvc-usuarios/src/main/java/org/catamus/springcloud/msvc/usuarios/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-usuarios/src/main/java/org/catamus/springcloud/msvc/usuarios/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-usuarios/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-usuarios/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-usuarios/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-usuarios/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc-usuarios/src/main/java/org/catamus/springcloud/msvc/usuarios/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-usuarios/src/main/java/org/catamus/springcloud/msvc/usuarios/controllers/UsuarioController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
